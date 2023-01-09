@@ -14,8 +14,7 @@ python based GUI for being hidden in telegram
 
 	
 
-https://user-images.githubusercontent.com/82968741/211257082-9a3521a8-e970-4536-bf12-100653745ac7.mp4
-
+https://user-images.githubusercontent.com/82968741/211257490-bc0237e2-ecc2-4707-acfd-63d604f8b391.mp4
 
 
 	
