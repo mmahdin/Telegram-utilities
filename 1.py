@@ -15,8 +15,8 @@ from moviepy.editor import VideoFileClip
 import time
 import subprocess
 
-api_id = 18264052 #6531082
-api_hash = 'b0e2fcb26b9ebf1d4fffb8a9c6af9de0'#'0855c79ed86d7fff7df8113f0624590c'
+api_id = ""
+api_hash = ""
 client = TelegramClient('anon', api_id, api_hash)
 
 width = 0
