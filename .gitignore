@@ -4,3 +4,4 @@ pyvenv.cfg
 /python_v2/config
 python_v2/anon.session
 python_v2/session_name.session
+python_v2/media/
