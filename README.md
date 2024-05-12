@@ -1,14 +1,39 @@
-# Telegram-ghost
-python based GUI for being hidden in telegram
+# Audio Search User Bot (New Feature)
 
-## with this application you can available do following without anyone know:
-* see message of personal chat and group!
-* send message to personal chat and group!
-* download and see any file and media from personal chat and group!
-* send any file and media to personal chat and group!
-* see profile photo and save it!
-* save text message of personal chat and group to .txt file!
-* determine maximom size of file for download!
+## Overview
+This repository contains the code for the new feature of the Audio Search Bot. The previous version can be found in the `python_v1` folder. The bot is written in Python and is currently command-line based, with plans to incorporate a GUI in C++ for Linux and potentially for Android in the future. The repository is actively being developed, with interesting features being added every week.
+
+## Main Features
+The main feature of this new version is the ability to search for a word or phrase within audio files in a private chat. Users can initiate a search by sending a specific message format in the chat. Here's how it works:
+
+### Search Format
+To search for a word or phrase in the audio files of a private chat, send the following message:
+
+@telegram|30000
+
+
+### Search Criteria
+- **Word or Phrase**: Replace "telegram" with the word or phrase you want to search for within the audio files.
+- **File Size Limit**: Specify the maximum size of audio files to be searched in bytes. In this example, the limit is set to 30,000 bytes.
+
+### Search Process
+When the bot receives the search message, it scans the 10 most recent audio files in the chat, each with a size less than the specified limit. If any of the audio files contain the specified word or phrase, the bot will reply with the corresponding messages.
+
+
+
+
+# Telegram-ghost (Latest Version)
+Python-based GUI for staying hidden in Telegram
+
+## With this application, you can perform the following actions without anyone knowing:
+* View messages from personal chats and groups!
+* Send messages to personal chats and groups!
+* Download and view any files and media from personal chats and groups!
+* Send any files and media to personal chats and groups!
+* View profile photos and save them!
+* Save text messages from personal chats and groups to a .txt file!
+* Specify the maximum size of files for downloading!
+
 
 ## Example
 
