@@ -200,6 +200,19 @@ async def log_outgoing_messages(event):
         message_text = event.raw_text
         await handle_search_and_download_audio(message_text, chat_id)
 
+
+@client.on(events.NewMessage(incoming=True))
+async def log_incoming_messages(event):
+    """
+    This event handler listens for incoming messages. If the message is received in a private chat,
+    it extracts the chat ID and the message text, then processes the message to search and download audio files.
+    """
+    if event.is_private:
+        chat_id = event.chat_id
+        message_text = event.raw_text
+        await handle_search_and_download_audio(message_text, chat_id)
+
+
 with client:
     client.start()
     client.run_until_disconnected()
